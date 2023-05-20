@@ -1,0 +1,7 @@
+.container {
+    /* remember to set a width */
+    margin: 0 auto;
+    width:30%;
+    background-color: red;
+    
+}

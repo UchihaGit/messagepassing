@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <p>A Messge You Would Like To Pass</p>
+    <form>
+      <input type="text" name="inputfield" id="field" value="" />
+      <button type="submit" onclick="myFunction()" name="button"> Submit </button>
+      <p id="empty"></p>
+      <p id="receive"></p>
+    </form>
+
+  </div>
+  <script>
+    function myFunction() {
+
+      var a = document.getElementById("field").value;
+
+      if(a === ""){
+          document.getElementById("empty").innerHTML = "field is empty";
+      }
+      else {
+        document.getElementById("empty").innerHTML = "Last Message Delivered";
+      }
+      document.getElementById("receive").innerHTML = "the value is " + a;
+    }
+  </script>
+</body>
+
+</html>
